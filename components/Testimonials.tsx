@@ -4,21 +4,21 @@ const testimonials = [
   [
     {
       content:
-        "Just had early access to this and it's *ridic*. Powered by @vercel x @replicatehq – also very fast.",
+        "Acabo de tener acceso anticipado a esto y es *ridículo*. Desarrollado por @vercel x @replicatehq, también muy rápido.",
       link: "https://twitter.com/rauchg/status/1612233034622984192",
       author: {
         name: "Guillermo Rauch",
-        role: "CEO at Vercel",
+        role: "CEO de Vercel",
         image: "/g.jpg",
       },
     },
     {
       content:
-        "This is amazing! And in the 🧵 you can see the whole open-source stack instantly deployable to Vercel",
+        "¡Esto es increíble! Y en el 🧵 puede ver toda la pila de código abierto que se puede implementar instantáneamente en Vercel",
       link: "https://twitter.com/cramforce/status/1612496954218672128",
       author: {
         name: "Malte Ubl",
-        role: "CTO at Vercel",
+        role: "CTO en Vercel",
         image: "/malte.jpg",
       },
     },
@@ -26,21 +26,21 @@ const testimonials = [
   [
     {
       content:
-        "I just used it and am extremely impressed with the website and wanted to express my appreciation for the excellent design and functionality. Keep up the great work!",
+        "Lo acabo de usar y estoy muy impresionado con el sitio web y quería expresar mi agradecimiento por el excelente diseño y funcionalidad. ¡Seguíd con el buen trabajo!",
       link: "https://twitter.com/phar_whaz/status/1612498030627852309",
       author: {
         name: "Fawaz Adeniji",
-        role: "Software Engineer",
+        role: "Ingeniero de Software",
         image: "/fawaz.jpg",
       },
     },
     {
       content:
-        "Turning blurred photos into perfectly sharp ones. Works like magic",
+        "Convertir fotos borrosas en fotos perfectamente nítidas. Funciona como magia",
       link: "https://twitter.com/sergvind/status/1612610058369515521",
       author: {
         name: "Sergei Vinderskikh",
-        role: "CPO at Treeum",
+        role: "CPO en Treeum",
         image: "/sergei.jpg",
       },
     },
@@ -48,21 +48,21 @@ const testimonials = [
   [
     {
       content:
-        "I've just used it and damn I'll keep coming back! This is so good. Great work!",
+        "¡Lo acabo de usar y maldita sea, seguiré usándolo! Esto es tan bueno. ¡Buen trabajo!",
       link: "https://twitter.com/Himanil_Gole/status/1612510385504157697",
       author: {
         name: "Himanil Gole",
-        role: "Designer & Founder at CBREX",
+        role: "Diseñador & Fundador de CBREX",
         image: "/himanil.jpg",
       },
     },
     {
       content:
-        "Wow, thank you! Tried a few and love it! My small example (pic of father from 70s original on right), really cleaned it up!",
+        "¡Wow gracias! ¡Probé algunos y me encanta! Mi pequeño ejemplo (foto del padre del original de los 70 a la derecha), ¡realmente lo limpió!",
       link: "https://twitter.com/rod_ellison/status/1612513333302775809",
       author: {
         name: "Rod Ellison",
-        role: "Software Engineer",
+        role: "Ingeniero de Software",
         image: "/rod.jpg",
       },
     },
@@ -73,7 +73,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      aria-label="What our customers are saying"
+      aria-label="Lo que dicen nuestros clientes"
       className="py-10"
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +117,7 @@ export function Testimonials() {
                             <Image
                               className="h-14 w-14 object-cover"
                               src={testimonial.author.image}
-                              alt="picture of the testimonial author"
+                              alt="foto del autor del testimonio"
                               width={56}
                               height={56}
                             />
