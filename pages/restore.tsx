@@ -76,29 +76,20 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Restore Photos</title>
+        <title>Restaura fotos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
-        <a
-          href="https://youtu.be/JcE-1xzQTE0"
-          target="_blank"
-          rel="noreferrer"
-          className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out"
-        >
-          Are you a developer and want to learn how I built this? Watch the{" "}
-          <span className="font-bold">YouTube tutorial</span>.
-        </a>
         <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Restore any face photo
+          Restaura cualquier foto facial
         </h1>
         <p className="text-slate-500">
           {" "}
           {/* Obtained this number from Vercel: based on how many serverless invocations happened. */}
           <CountUp start={50000} end={144964} duration={2} separator="," />{" "}
-          photos generated and counting.
+          fotos generadas, y contando...
         </p>
         <ResizablePanel>
           <AnimatePresence exitBeforeEnter>
@@ -127,7 +118,7 @@ const Home: NextPage = () => {
               {restoredImage && originalPhoto && !sideBySide && (
                 <div className="flex sm:space-x-4 sm:flex-row flex-col">
                   <div>
-                    <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                    <h2 className="mb-1 font-medium text-lg">Foto original</h2>
                     <Image
                       alt="original photo"
                       src={originalPhoto}
@@ -137,7 +128,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <div className="sm:mt-0 mt-8">
-                    <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                    <h2 className="mb-1 font-medium text-lg">Foto restaurada</h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
@@ -180,7 +171,7 @@ const Home: NextPage = () => {
                     }}
                     className="bg-black rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-black/80 transition"
                   >
-                    Upload New Photo
+                    Cargar foto nueva
                   </button>
                 )}
                 {restoredLoaded && (
@@ -193,7 +184,7 @@ const Home: NextPage = () => {
                     }}
                     className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
                   >
-                    Download Restored Photo
+                    Descarga foto restaurada
                   </button>
                 )}
               </div>
